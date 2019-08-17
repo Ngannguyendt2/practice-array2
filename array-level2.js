@@ -1,15 +1,12 @@
 function print() {
-    let array = [
-        [1, 2, 1, 24],
-        [8, 11, 9, 4],
-        [7, 0, 7, 27],
-        [7, 4, 28, 14],
-        [3, 10, 26, 7]
-    ];
-    for (let i = 0; i < array.length; i++) {
+    let array = [];
+    for (let i = 0; i < 10; i++) {
         console.log('row ' + i);
-        for (let j = 0; j < array[i].length; j++) {
-            console.log(" " + array[i][j]);
+        array[i] = [];
+        document.write("<br>");
+        for (let j = 0; j < 10; j++) {
+            array[i][j] = i*j;
+            document.write(array[i][j]);
         }
     }
 }
